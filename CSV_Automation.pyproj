@@ -1,0 +1,88 @@
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>a443ad71-8a65-4d63-96c2-3809f83d51d4</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <StartupFile>
+    </StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <Name>CSV_Automation</Name>
+    <RootNamespace>CSV_Automation</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="CSV_Automation.py" />
+    <Compile Include="DA_Automation.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DOD.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="livefeed_cleaning.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="lofm.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="us_update.py" />
+    <Compile Include="uk_update.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="us_domain_analysis.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="domain_check.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Domain_Extraction.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="fetchWebsite.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="find_hard_bounce.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="graduation_automation.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="multiproccesing.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="us_web_scrapper.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="persona_split.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="UK_Comparison.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="uk_domain_analysis.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="uk_web_scrapper.py">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
+  <!-- Uncomment the CoreCompile target to enable the Build command in
+       Visual Studio and specify your pre- and post-build commands in
+       the BeforeBuild and AfterBuild targets below. -->
+  <!--<Target Name="CoreCompile" />-->
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+</Project>
